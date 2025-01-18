@@ -3,8 +3,8 @@ TARGET:=blobmsgtest
 
 SRCS:=$(wildcard *.c)
 OBJS:=$(patsubst %.c, %.o, $(SRCS))
-CFLAGS:=-I../inc
-LDGLAGS:=-L../lib -lubox -lblobmsg_json
+CFLAGS:=-I/usr/local/include
+LDGLAGS:=-L/usr/local/lib/ -lubox -lblobmsg_json
 CC=gcc
 
 
